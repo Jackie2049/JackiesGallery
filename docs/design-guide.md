@@ -25,7 +25,3 @@ const EXPERIMENTS = [
 ## 发布
 
 推送 `main` 分支 → GitHub Pages 自动重建 → `https://jackie2049.github.io/JackiesGallery/<作品名>/` 生效。
-
-## 内容边界
-
-对外展品只呈现**结论与框架**；内部过程数据（如私有对话转写、未公开日志）不得进入本站。
