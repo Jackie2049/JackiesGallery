@@ -1,6 +1,8 @@
 # JackiesGallery
 
-> 🌐 Jackie2049 的小画廊，展示可视化结果、分析报告等材料。访问链接：<https://jackie2049.github.io/JackiesGallery/>
+🎨 Jackie2049 的小画廊，展示可视化结果、分析报告等材料
+
+🌐 访问链接：<https://jackie2049.github.io/JackiesGallery/>
 
 ## 添加一份新展品
 
