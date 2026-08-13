@@ -40,9 +40,15 @@
 // 展品登记表：新增展品时在这里加一条
 const EXPERIMENTS = [
   {
+    title: '[vLLM] vLLM-Ascend DeepWiki',
+    desc: 'infer_vLLM · vLLM-Ascend 架构文档（deepwiki.com 外部链接）。',
+    url: 'https://deepwiki.com/vllm-project/vllm-ascend/1-overview',
+    date: '2026-08'
+  },
+  {
     title: '[vLLM] 系统架构',
-    desc: 'infer_vllm · vLLM 整体系统架构图（vllm-arch_overview）。',
-    url: 'infer_vllm/',
+    desc: 'infer_vLLM · vLLM 整体系统架构图（vllm-arch_overview）。',
+    url: 'infer_vLLM/',
     date: '2026-08'
   },
   {
@@ -53,9 +59,10 @@ const EXPERIMENTS = [
   }
 ];
 document.getElementById('gallery').innerHTML = EXPERIMENTS.map(e=>
-  '<a class="card" href="'+e.url+'"><h2>'+e.title+'</h2>'+
+  '<a class="card" href="'+e.url+'"'+(e.url.indexOf('http')===0?' target="_blank" rel="noopener"':'')+'>'+
+  '<h2>'+e.title+'</h2>'+
   '<div class="desc">'+e.desc+'</div>'+
-  '<div class="meta">'+e.date+'</div></a>'
+  '<div class="meta">'+e.date+(e.url.indexOf('http')===0?' · 外部链接': '')+'</div></a>'
 ).join('');
 </script>
 </body>
