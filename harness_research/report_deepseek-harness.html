@@ -191,6 +191,7 @@ const models = ctx.llm  // 谁实现的不重要，接口一样就行</code></pr
     <tr><td>许可证</td><td>MIT</td></tr>
     <tr><td>状态</td><td>Developer Preview（开发者预览）</td></tr>
 </table>
+<p><strong>概念速解：</strong>「包」= npm workspace 包，即 monorepo 中一个可独立构建、复用、发布的模块（如 <code>@deepseek-ai/dsh-core</code>），整个仓库像积木盒装着 219 块积木；「逻辑组」= 按功能域把这些包归入的 49 个分组目录（核心 / 客户端 / 服务端 / LLM 能力…），见下方 3.2 目录结构。</p>
 
 <h3>3.2 目录结构</h3>
 <pre><code>deepseek-harness/
