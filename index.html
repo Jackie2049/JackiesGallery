@@ -38,7 +38,7 @@
 
 <script>
 // 展品登记表：新增展品时在这里加一条
-const EXPERIMENTS = [
+const THEME = [
   {
     title: '[Harness] DeepSeek Harness',
     desc: 'harness_research · DeepSeek Harness 全面研究报告（架构、插件系统、Agent Infra 从入门到深入）。',
@@ -58,7 +58,7 @@ const EXPERIMENTS = [
     date: '2026-08'
   }
 ];
-document.getElementById('gallery').innerHTML = EXPERIMENTS.map(e=>
+document.getElementById('gallery').innerHTML = THEME.map(e=>
   '<a class="card" href="'+e.url+'"'+(e.url.indexOf('http')===0?' target="_blank" rel="noopener"':'')+'>'+
   '<h2>'+e.title+'</h2>'+
   '<div class="desc">'+e.desc+'</div>'+
