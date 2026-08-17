@@ -6,7 +6,7 @@
 
 ## 添加一份新展品
 
-1. 新建目录 `<作品名>/`，放一个自包含的 `index.html`（内联 CSS/JS，零外链）；
+1. 新建目录 `<子项目>/`，放一个自包含的 `index.html`（内联 CSS/JS，零外链）；
 2. 在顶层 `index.html` 的 `EXPERIMENTS` 数组登记一条（标题 + 描述 + 链接 + 日期）；
 3. 推送 `main`，GitHub Pages 自动更新，无需其他操作。
 
