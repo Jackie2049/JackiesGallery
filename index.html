@@ -16,7 +16,7 @@
   .card{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:20px;text-decoration:none;color:var(--text);transition:border-color .15s,transform .1s;display:block;}
   .card:hover{border-color:var(--accent);transform:translateY(-2px);}
   .card h2{margin:0 0 6px;font-size:17px;}
-  .card .desc{font-size:13px;color:var(--muted);margin-bottom:10px;}
+  .card .introduction{font-size:13px;color:var(--muted);margin-bottom:10px;}
   .card .meta{font-size:12px;color:var(--accent);}
   .howto{margin-top:36px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:18px 22px;}
   .howto h3{margin:0 0 8px;font-size:14px;}
@@ -41,34 +41,34 @@
 const THEME = [
   {
     title: '[News] 每日快报',
-    desc: '',
-    url: 'news_overview/',
+    introduction: '',
+    directory: 'news_overview/',
     date: '2026-08'
   },
   {
     title: '[Harness] DeepSeek Harness',
-    desc: 'DeepSeek Harness开源项目研究报告',
-    url: 'harness_research/report_deepseek-harness.html',
+    introduction: 'DeepSeek Harness开源项目研究报告',
+    directory: 'harness_research/report_deepseek-harness.html',
     date: '2026-08'
   },
   {
     title: '[vLLM] 系统架构',
-    desc: 'vLLM架构视图PlantUML',
-    url: 'infer_vLLM/',
+    introduction: 'vLLM架构视图PlantUML',
+    directory: 'infer_vLLM/',
     date: '2026-08'
   },
   {
     title: '[0daybot] 推理开箱工作流',
-    desc: '在vLLM上进行新模型开箱适配',
-    url: 'infer_0daybot/',
+    introduction: '在vLLM上进行新模型开箱适配',
+    directory: 'infer_0daybot/',
     date: '2026-08'
   }
 ];
 document.getElementById('gallery').innerHTML = THEME.map(e=>
-  '<a class="card" href="'+e.url+'"'+(e.url.indexOf('http')===0?' target="_blank" rel="noopener"':'')+'>'+
+  '<a class="card" href="'+e.directory+'"'+(e.directory.indexOf('http')===0?' target="_blank" rel="noopener"':'')+'>'+
   '<h2>'+e.title+'</h2>'+
-  '<div class="desc">'+e.desc+'</div>'+
-  '<div class="meta">'+e.date+(e.url.indexOf('http')===0?' · 外部链接': '')+'</div></a>'
+  '<div class="introduction">'+e.introduction+'</div>'+
+  '<div class="meta">'+e.date+(e.directory.indexOf('http')===0?' · 外部链接': '')+'</div></a>'
 ).join('');
 </script>
 </body>
